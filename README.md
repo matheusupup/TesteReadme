@@ -25,29 +25,31 @@ Firefox 57.0
 - config.properties  
     - browser.name: Nome do navegador;
     - prop.emissor: Nome do emissor;
+    - thread.count: Quantidade de testes executando em paralelo;
+    - retry.limit: Vezes para reexecutar testes com falha;
     - site.address: Endereço da aplicação;
-    - site.login: Login do usuário;
-    - site.senha: Senha do usuário;
-    - tipo.execucao: Local ou em grid(Servidor).
+    - site.login: Login do usuário na aplicação;
+    - site.senha: Senha do usuário na aplicação;
+    - tipo.execucao: Local ou em grid(Servidor);
+    - headless: True para abrir navegador e False para execução do teste sem abrir navegador;
+    - dimensao.personalizada = True para ativar a resolução personalizada e False para usar resolução da tela principal;
+    - largura: largura da resolução;
+    - altura: altura da resolução.
                         
 - sqa.properties
-    - testlink.key: Chave única de usuário para execução dos testes na ferramenta;
-    - testlink.project.name: Nome do projeto criado na ferramenta;
-    - testlink.plan.name: Nome do plano de teste associado ao projeto criado na ferramenta;
-    - testlink.build.name: Baseline associada ao plano de testes criado na ferramenta;
-    - executar.testlink: False para não passar a execução do teste na ferramenta e True para passar.
+    - destinatario.email: Email utilizado para testes de envio de email.
     
-- QaConductor.xml
-    - name: Nome do emissor;
-    - thread-count: Número de janelas a serem abertas ao executar a suite de testes.
-
 ## Rodando os testes
 
-- Rodar todos os testes da automação
-    - Botão direito no arquivo QaConductor.xml -> Run as TestNG Suite
+- Rodar todos os testes da automação em paralelo
+    - Botão direito no arquivo AllTests.xml -> Run as TestNG Suite
     ![Recordit GIF](http://g.recordit.co/UfljdGP1Wj.gif)
     
-- Rodar todos os testes de uma classe de teste    
+- Rodar todos os testes de uma classe de teste em paralelo
+    - Exemplo: Botão direito no arquivo Login.xml -> Run as TestNG Suite
+    ![Recordit GIF](http://g.recordit.co/UfljdGP1Wj.gif)    
+
+- Rodar todos os testes de uma classe de teste sem paralelismo
     - Entrar na classe de teste -> Clicar com o botão direito -> Run as TestNG Suite
     ![Recordit GIF](http://g.recordit.co/Bzo68RbhYF.gif)
  
@@ -57,6 +59,7 @@ Firefox 57.0
     
 ## Autores
 
-- Luis Paulo Ramos Milheiro
 - Jefferson Ferreira Torres Bessa
+- Luis Paulo Ramos Milheiro
+- Luiz Felipe Martins
 - Matheus Carneiro de Souza Barros
