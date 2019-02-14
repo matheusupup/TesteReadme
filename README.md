@@ -18,7 +18,7 @@ Firefox 57.0
 
 - sqa.properties - arquivo com as configurações da integração da automação com a ferramenta TestLink, etc.
 
-- QaConductor.xml - arquivo contendo todos os casos de teste a serem executados na suite da automação.
+- AllTests.xml - arquivo contendo todas as suítes de teste da automação.
 
 ## Parâmetros chaves a serem modificados em cada um dos arquivos
 
@@ -50,11 +50,11 @@ Firefox 57.0
     ![Recordit GIF](http://g.recordit.co/UfljdGP1Wj.gif)    
 
 - Rodar todos os testes de uma classe de teste sem paralelismo
-    - Entrar na classe de teste -> Clicar com o botão direito -> Run as TestNG Suite
+    - Entrar na classe de teste -> Clicar com o botão direito -> Run as TestNG Test
     ![Recordit GIF](http://g.recordit.co/Bzo68RbhYF.gif)
  
 - Rodar apenas um caso de teste   
-    - Entrar na classe de teste -> Selecionar método de teste -> Clicar com o botão direito -> Run as TestNG Suite
+    - Entrar na classe de teste -> Selecionar método de teste -> Clicar com o botão direito -> Run as TestNG Test
     ![Recordit GIF](http://g.recordit.co/pMn5DSlWJD.gif)
     
 ## Autores
